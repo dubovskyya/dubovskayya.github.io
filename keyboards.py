@@ -9,3 +9,8 @@ keyboard = types.ReplyKeyboardMarkup(
     ],
     resize_keyboard=True
 )
+
+cb = CallbackData('btn', 'action')
+key = InlineKeyboardMarkup(
+    inline_keyboard=[[InlineKeyboardButton('Pay', callback_data='btn:buy')]]
+)
