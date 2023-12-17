@@ -3,7 +3,6 @@ from keyboards import keyboard
 from aiogram import types
 from aiogram.dispatcher.filters import Command
 
-from keyboards import keyboard
 @dp.message_handler(Command('start'))
 async def start(message: types.Message):
     await bot.send_message(message.chat.id, 'Тестируем WebApp!',
